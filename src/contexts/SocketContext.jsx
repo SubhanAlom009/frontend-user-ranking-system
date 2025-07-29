@@ -12,9 +12,7 @@ export function SocketProvider({ children }) {
   const socketRef = useRef();
 
   useEffect(() => {
-    socketRef.current = io(
-      import.meta.env.VITE_BASE_URL || "http://localhost:3000"
-    );
+    socketRef.current = io(import.meta.env.VITE_BASE_URL);
     return () => {
       socketRef.current.disconnect();
     };
