@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:4000/api", // change if deployed
+  baseURL: "https://backend-user-ranking-system.onrender.com", // change if deployed
 });
 
 // ========== USERS ==========
